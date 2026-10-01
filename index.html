@@ -105,13 +105,38 @@
     .sticky-cta{display:flex;}
     footer{padding-bottom:100px;}
   }
+  /* MOT guidance and telephone booking */
+  .mot-guide{background:var(--card);}
+  .mot-guide__grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .mot-panel{padding:28px; border:1px solid var(--line); border-radius:8px; background:var(--bg);}
+  .mot-panel h3{font-size:26px; margin-bottom:12px;}
+  .mot-panel p + p{margin-top:14px;}
+  .mot-checks{padding-left:22px; columns:2; column-gap:24px; margin-bottom:18px;}
+  .mot-checks li{break-inside:avoid; margin-bottom:8px;}
+  .mot-tip{margin-top:24px; border-left:4px solid var(--accent); padding:20px 24px; background:var(--bg);}
+  .mot-tip h3{font-size:24px; margin-bottom:8px;}
+  .mot-tip ul{padding-left:22px; margin-bottom:16px;}
+  .booking{max-width:900px; margin:0 auto 32px; padding:32px; border:2px solid var(--accent); border-radius:8px; background:var(--bg);}
+  .booking h2{font-size:clamp(28px,4vw,40px); margin-bottom:12px;}
+  .booking p{margin-bottom:16px;}
+  .booking__phone{font-size:clamp(24px,5vw,34px); font-weight:700;}
+  .booking__actions{display:flex; flex-wrap:wrap; gap:16px; align-items:center;}
+  .strip .trust-label{font-size:25px;}
+  .contact-link{display:inline-block; margin-top:12px; font-weight:700;}
+  @media(max-width:820px){
+    .mot-guide__grid{grid-template-columns:1fr;}
+    .mot-checks{columns:1;}
+    .mot-panel,.booking{padding:24px;}
+  }
 </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="wrap topbar__inner">
+    <!-- PLACEHOLDER: confirm walk-ins policy -->
     <p>Station Rd, Northfield — walk-ins welcome for quick checks</p>
+    <!-- /PLACEHOLDER -->
     <a href="tel:+441214752958">📞 0121 475 2958</a>
   </div>
 </div>
@@ -140,12 +165,15 @@
 <section class="hero" id="top">
   <div class="hero__inner">
     <span class="hero__tag">MOT &amp; Servicing · Station Rd, Northfield</span>
-    <h1>Honest garage.<br><span>Fair prices.</span></h1>
-    <p>Church Hill Autos has been keeping Northfield's cars on the road with MOT testing, servicing and repairs you can trust.</p>
+    <h1>MOT due in Northfield?<br><span>Honest garage. Fair prices.</span></h1>
+    <!-- PLACEHOLDER: confirm trading claims in hero copy -->
+    <p>Church Hill Autos has been keeping Northfield's cars on the road with MOT testing, servicing and repairs you can trust. Have your reg and mileage ready when you call.</p>
+    <!-- /PLACEHOLDER -->
     <div class="hero__actions">
       <a href="#contact" class="btn btn--accent">Book an MOT</a>
       <a href="tel:+441214752958" class="btn btn--outline">📞 0121 475 2958</a>
     </div>
+
   </div>
 </section>
 
@@ -153,31 +181,96 @@
   <div class="wrap">
     <div class="section__head reveal">
       <h2>Our Services</h2>
-      <p>Everything your car needs, under one roof.</p>
+      <p>MOT coming up, or time for a service? Start with a call to Church Hill Autos on Station Rd.</p>
     </div>
     <div class="grid">
+      <!-- PLACEHOLDER: confirm MOT advisory explanation process -->
       <div class="card reveal"><div class="icon">📋</div><h3>MOT Testing</h3><p>We show you the advisory on the actual car, not just a line on a printout, so you know exactly what it means.</p></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm full and interim servicing and service records -->
       <div class="card reveal"><div class="icon">🔧</div><h3>Servicing</h3><p>Full or interim — we log everything replaced so your service history actually holds up at resale.</p></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm repairs, diagnostics and free fault-code reads -->
       <div class="card reveal"><div class="icon">⚙️</div><h3>Repairs &amp; Diagnostics</h3><p>Fault code read for free before any repair's quoted — you're never paying just to be told what's wrong.</p></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm tyre and exhaust services, balancing and pressure checks -->
       <div class="card reveal"><div class="icon">🛞</div><h3>Tyres &amp; Exhausts</h3><p>Every tyre balanced and pressure-checked on fitting, not just bolted on and sent back out.</p></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm brake and clutch services and repair approach -->
       <div class="card reveal"><div class="icon">🛑</div><h3>Brakes &amp; Clutches</h3><p>We replace what's actually worn — pads on their own where that's genuinely all that's needed.</p></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm air conditioning services, refrigerants and typical one-hour turnaround -->
       <div class="card reveal"><div class="icon">❄️</div><h3>Air Con Re-Gas</h3><p>Most re-gases done within the hour, so it's rarely an all-day job.</p></div>
+      <!-- /PLACEHOLDER -->
     </div>
   </div>
 </section>
 
 <section class="strip">
   <div class="wrap grid">
+    <!-- PLACEHOLDER: verify 20+ years trading on Station Rd -->
     <div class="reveal"><h3>20+</h3><p>Years on Station Rd</p></div>
+    <!-- /PLACEHOLDER -->
+    <!-- PLACEHOLDER: confirm no-unnecessary-work and same-day MOT claims -->
     <div class="reveal"><h3>Honest</h3><p>No Unnecessary Work</p></div>
     <div class="reveal"><h3>Fast</h3><p>Same-Day MOTs Available</p></div>
+    <!-- /PLACEHOLDER -->
+    <!-- PLACEHOLDER: verify DVSA approval before publishing -->
+    <div class="reveal"><h3 class="trust-label">DVSA-approved</h3><p>MOT test centre</p></div>
+    <!-- /PLACEHOLDER -->
+    <!-- PLACEHOLDER: confirm Class 4 MOT testing availability -->
+    <div class="reveal"><h3 class="trust-label">Class 4 MOTs</h3><p>Car MOT testing</p></div>
+    <!-- /PLACEHOLDER -->
+  </div>
+</section>
+
+<section id="mot-guide" class="mot-guide">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <h2>Your MOT, explained</h2>
+      <p>A little preparation before your visit to Station Rd can make the next steps clearer.</p>
+    </div>
+    <div class="mot-guide__grid">
+      <div class="mot-panel reveal">
+        <h3>What's checked in an MOT</h3>
+        <ul class="mot-checks">
+          <li>Lights</li><li>Brakes</li><li>Tyres</li><li>Steering</li>
+          <li>Suspension</li><li>Seatbelts</li><li>Emissions</li><li>Windscreen and wipers</li>
+        </ul>
+        <p>These are some of the checks on a car MOT. The test checks safety and environmental standards; it does not replace a service.</p>
+        <p><a href="https://www.gov.uk/government/publications/car-parts-checked-at-an-mot/car-parts-checked-at-an-mot">Read the full DVSA checklist</a>.</p>
+      </div>
+      <div class="mot-panel reveal">
+        <h3>If your car fails</h3>
+        <p>Use the failure report to discuss the repairs needed and arrange a retest.</p>
+        <p>Under standard DVSA rules, leaving your car at the test centre for repair means a free partial retest if it is retested within 10 working days.</p>
+        <p>If you take it away for repairs, returning to the same centre within 10 working days can mean a partial retest fee. Certain items qualify for a free retest by the end of the next working day. Otherwise, a full test and fee apply.</p>
+        <!-- PLACEHOLDER: confirm Church Hill Autos repair arrangements and retest policy -->
+        <p>We explain the failure report, quote for the repairs and arrange your retest. Leave your car with us for repair and we’ll complete the partial retest free within 10 working days.</p>
+        <!-- /PLACEHOLDER -->
+        <p><a href="https://www.gov.uk/getting-an-mot/retests">Check the DVSA retest rules</a>.</p>
+      </div>
+    </div>
+    <div class="mot-tip reveal">
+      <h3>Before your MOT</h3>
+      <ul>
+        <li>Check that your lights work and your windscreen is clean.</li>
+        <li>Top up the screenwash and check that the wipers clear the glass.</li>
+        <li>Look for visible tyre damage and make sure seatbelts are accessible.</li>
+      </ul>
+      <p>Have your registration and mileage ready when you book your visit to Station Rd.</p>
+    </div>
+    <div class="mot-tip reveal">
+      <h3>MOT due date reminder</h3>
+      <p>Not sure when yours runs out? <a href="https://www.gov.uk/check-mot-history">Check your MOT history and expiry date on GOV.UK</a>, then set a reminder in your calendar to call Church Hill Autos before it is due.</p>
+    </div>
   </div>
 </section>
 
 <section id="work" style="padding:0;">
   <div class="section__head reveal" style="padding:70px 24px 40px;">
-    <h2>Inside The Garage</h2>
-    <p>A look at the workshop and the work we do.</p>
+    <h2>Garage work, in focus</h2>
+    <p>From under the bonnet to beneath the car: a closer look at the work that keeps you moving.</p>
   </div>
   <div class="band reveal">
     <img src="https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic looking at car engine" loading="lazy" />
@@ -189,10 +282,13 @@
 <section>
   <div class="wrap">
     <div class="owner reveal">
-      <img src="https://images.pexels.com/photos/34011409/pexels-photo-34011409.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Mechanic at Church Hill Autos" loading="lazy" />
+      <img src="https://images.pexels.com/photos/34011409/pexels-photo-34011409.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Mechanic in a garage setting" loading="lazy" />
       <div>
+        <!-- PLACEHOLDER: replace staff quotation and attribution with an approved Church Hill Autos quotation -->
         <blockquote>"I tell customers the same thing I'd tell my own family — what actually needs doing now, and what can wait. That's why people keep coming back."</blockquote>
         <div class="who">— Head Mechanic, Church Hill Autos</div>
+        <!-- /PLACEHOLDER -->
+
       </div>
     </div>
   </div>
@@ -201,17 +297,23 @@
 <section id="reviews" class="reviews">
   <div class="wrap">
     <div class="section__head reveal">
-      <span class="rating-badge">⭐ 4.8 · Google Reviews</span>
+      <span class="rating-badge">What locals say</span>
       <h2>What drivers say</h2>
-      <p>Honest feedback from local drivers.</p>
+      <p>MOT visits, servicing and straight answers on Station Rd.</p>
     </div>
     <div class="review-grid">
-      <div class="review reveal"><div class="stars">★★★★★</div><p>"Told me straight what needed doing and what could wait. Didn't try to sell me anything extra."</p><div class="who"><span class="avatar">C</span> Local Driver</div></div>
-      <div class="review reveal"><div class="stars">★★★★★</div><p>"Booked an MOT same day when mine was about to run out. Really appreciated it."</p><div class="who"><span class="avatar">E</span> Local Driver</div></div>
-      <div class="review reveal"><div class="stars">★★★★☆</div><p>"Fair pricing on a full service, car's been running great since."</p><div class="who"><span class="avatar">F</span> Local Driver</div></div>
+      <!-- PLACEHOLDER: replace with real Google reviews -->
+      <div class="review reveal"><div class="stars">★★★★★</div><p>"Told me straight what needed doing and what could wait. Didn't try to sell me anything extra."</p><div class="who"><span class="avatar">C</span> Chris · Local regular</div></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: replace with real Google reviews -->
+      <div class="review reveal"><div class="stars">★★★★★</div><p>"Booked an MOT same day when mine was about to run out. Really appreciated it."</p><div class="who"><span class="avatar">E</span> Emma · Northfield driver</div></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: replace with real Google reviews -->
+      <div class="review reveal"><div class="stars">★★★★☆</div><p>"Fair pricing on a full service, car's been running great since."</p><div class="who"><span class="avatar">F</span> Frank · Local regular</div></div>
+      <!-- /PLACEHOLDER -->
     </div>
     <div style="text-align:center; margin-top:36px;">
-      <a class="btn btn--outline" style="border-color:var(--accent); color:var(--accent);" href="https://www.google.com/search?q=Church+Hill+Autos+Station+Rd+Northfield+reviews" target="_blank" rel="noopener">See all reviews on Google →</a>
+      <a class="btn btn--outline" style="border-color:var(--accent); color:var(--accent);" href="tel:+441214752958">Talk to Church Hill Autos</a>
     </div>
   </div>
 </section>
@@ -223,10 +325,22 @@
       <p>What drivers usually ask before booking.</p>
     </div>
     <div class="faq reveal">
+      <details><summary>How do I book an MOT?</summary><p>Call <a href="tel:+441214752958">0121 475 2958</a> with your reg and mileage ready. We’ll arrange your appointment on Station Rd.</p></details>
+      <!-- PLACEHOLDER: confirm typical MOT duration and on-site waiting -->
       <details><summary>How long does an MOT take?</summary><p>Usually 45-60 minutes — you're welcome to wait on-site.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm same-day MOT availability -->
       <details><summary>Can I book a same-day MOT?</summary><p>Often yes — give us a call and we'll fit you in where we can.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm courtesy car availability -->
       <details><summary>Do you offer a courtesy car?</summary><p>For longer repairs, ask when booking and we'll see what's available.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm accepted payment methods -->
       <details><summary>What payment methods do you accept?</summary><p>Card, contactless and cash are all accepted.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm MOT price -->
+      <details><summary>How much is an MOT?</summary><p>A Class 4 car MOT is £45. Call <a href="tel:+441214752958">0121 475 2958</a> to book your test.</p></details>
+      <!-- /PLACEHOLDER -->
     </div>
   </div>
 </section>
@@ -234,24 +348,39 @@
 <section class="cta-band">
   <div class="wrap reveal">
     <h2>Due an MOT?</h2>
-    <p>Give us a call to book your slot — same-day appointments often available.</p>
+    <p>Call Church Hill Autos with your reg and mileage ready to discuss a date and confirm the price.</p>
     <a href="tel:+441214752958" class="btn">📞 Call to Book</a>
   </div>
 </section>
 
 <section id="contact" style="background:#fff;">
+  <div class="wrap">
+    <div class="booking">
+      <h2>Book your MOT at Church Hill Autos</h2>
+      <p>For an MOT or servicing enquiry on Station Rd, call the garage to discuss your vehicle and an appointment.</p>
+      <p><strong>Have your reg and mileage ready.</strong> Tell us when your MOT is due and ask for the current price.</p>
+      <div class="booking__actions">
+        <a href="tel:+441214752958" class="btn btn--accent">Call to book your MOT</a>
+        <a href="tel:+441214752958" class="booking__phone">0121 475 2958</a>
+      </div>
+    </div>
+  </div>
   <div class="wrap map-contact reveal">
     <iframe src="https://maps.google.com/maps?q=Station+Rd,+Northfield,+Birmingham&z=15&output=embed" loading="lazy" title="Map to Church Hill Autos"></iframe>
     <div class="grid" style="grid-template-columns:1fr;">
-      <div class="card"><h3>🕒 Opening Hours</h3><p>Mon–Fri: 8am – 6pm<br>Sat: 8am – 1pm</p></div>
-      <div class="card"><h3>📍 Location</h3><p>Station Rd<br>Northfield, Birmingham</p></div>
+      <!-- PLACEHOLDER: confirm real opening hours -->
+      <div class="card"><h3>🕒 Opening Hours</h3><p>Mon–Fri: 8am – 6pm<br>Sat: 8am – 1pm</p><a class="contact-link" href="tel:+441214752958">Call us</a></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: building number or unit and postcode needed; verify business directions destination -->
+      <div class="card"><h3>📍 Visit Station Rd</h3><p>Church Hill Autos<br>Station Rd<br>Northfield, Birmingham</p><a class="contact-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Church+Hill+Autos%2C+Station+Rd%2C+Northfield%2C+Birmingham">Get directions</a></div>
+      <!-- /PLACEHOLDER -->
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2026 Church Hill Autos, Station Rd, Northfield.</p>
-  <p style="margin-top:6px;">Site by <a href="#">your name here</a></p>
+  <p>&copy; 2026 Church Hill Autos, Northfield</p>
+  <p style="margin-top:6px;"><a href="tel:+441214752958">Call 0121 475 2958</a> · <a href="#contact">Find us</a></p>
 </footer>
 
 <div class="sticky-cta">
