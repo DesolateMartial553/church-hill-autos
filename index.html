@@ -48,6 +48,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="image" href="https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=800" media="(max-width:600px)" fetchpriority="high" />
+<link rel="preload" as="image" href="https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=1280" media="(min-width:601px) and (max-width:1100px)" fetchpriority="high" />
+<link rel="preload" as="image" href="https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=1920" media="(min-width:1101px)" fetchpriority="high" />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{
@@ -101,7 +104,9 @@
 
   /* hero */
   .hero{position:relative; padding:0; color:#fff; overflow:hidden; background:var(--black);}
-  .hero::before{content:"";position:absolute; inset:0; background:url('https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover; filter:grayscale(1) contrast(1.1);}
+  .hero::before{content:"";position:absolute; inset:0; background:url('https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=800') center/cover; filter:grayscale(1) contrast(1.1);}
+  @media(min-width:601px){.hero::before{background-image:url('https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=1280');}}
+  @media(min-width:1101px){.hero::before{background-image:url('https://images.pexels.com/photos/8985667/pexels-photo-8985667.jpeg?auto=compress&cs=tinysrgb&w=1920');}}
   .hero::after{content:"";position:absolute; inset:0; background:
       linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px) 0 0/56px 56px,
       linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px) 0 0/56px 56px,
@@ -470,16 +475,16 @@
     </div>
   </div>
   <div class="band reveal">
-    <img src="https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic looking at car engine" loading="lazy" />
-    <img src="https://images.pexels.com/photos/36044141/pexels-photo-36044141.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic repairing car brake" loading="lazy" />
-    <img src="https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic working under a vehicle" loading="lazy" />
+    <img src="https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w" sizes="(max-width:820px) 100vw, 33vw" width="800" height="450" alt="Mechanic looking at car engine" loading="lazy" decoding="async" />
+    <img src="https://images.pexels.com/photos/36044141/pexels-photo-36044141.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/36044141/pexels-photo-36044141.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/36044141/pexels-photo-36044141.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/36044141/pexels-photo-36044141.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w" sizes="(max-width:820px) 100vw, 33vw" width="800" height="1200" alt="Mechanic repairing car brake" loading="lazy" decoding="async" />
+    <img src="https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w" sizes="(max-width:820px) 100vw, 33vw" width="800" height="1200" alt="Mechanic working under a vehicle" loading="lazy" decoding="async" />
   </div>
 </section>
 
 <section class="owner-sec">
   <div class="wrap">
     <div class="owner reveal">
-      <img src="https://images.pexels.com/photos/34011409/pexels-photo-34011409.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Mechanic in a garage setting" loading="lazy" />
+      <img src="https://images.pexels.com/photos/34011409/pexels-photo-34011409.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=500&h=500" srcset="https://images.pexels.com/photos/34011409/pexels-photo-34011409.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=240&h=240 240w, https://images.pexels.com/photos/34011409/pexels-photo-34011409.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=500&h=500 500w" sizes="(max-width:820px) 200px, 240px" width="500" height="500" alt="Mechanic in a garage setting" loading="lazy" decoding="async" />
       <div>
         <!-- PLACEHOLDER: replace staff quotation and attribution with an approved Church Hill Autos quotation -->
         <blockquote>"I tell customers the same thing I'd tell my own family — what actually needs doing now, and what can wait. That's why people keep coming back."</blockquote>
@@ -565,7 +570,17 @@
     </div>
   </div>
   <div class="wrap map-contact reveal">
-    <iframe src="https://maps.google.com/maps?q=Station+Rd,+Northfield,+Birmingham&z=15&output=embed" loading="lazy" title="Map to Church Hill Autos"></iframe>
+    <div class="map-facade" id="map-facade" data-src="https://maps.google.com/maps?q=Station+Rd,+Northfield,+Birmingham&amp;z=15&amp;output=embed" data-title="Map to Church Hill Autos">
+      <div class="map-facade__panel">
+        <span class="map-facade__tag">Find the garage</span>
+        <strong class="map-facade__name">Church Hill Autos</strong>
+        <span class="map-facade__addr">Station Rd, Northfield, Birmingham</span>
+        <div class="map-facade__actions">
+          <button type="button" class="map-facade__btn" id="map-show">Show map</button>
+          <a class="map-facade__link" href="https://www.google.com/maps/search/?api=1&amp;query=Church+Hill+Autos+Station+Rd+Northfield+Birmingham" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
     <div class="grid" style="grid-template-columns:1fr;">
       <!-- PLACEHOLDER: confirm real opening hours -->
       <div class="card"><h3>Opening Hours</h3><p>Mon–Fri: 8am – 6pm<br>Sat: 8am – 1pm</p><a class="contact-link" href="tel:+441214752958">Call us</a></div>
@@ -648,5 +663,42 @@
   }
 </script>
 
+<style>
+  .map-facade{position:relative; min-height:320px; height:100%; border:3px solid var(--black); border-radius:0; background-color:var(--yellow); background-image:linear-gradient(rgba(17,17,17,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(17,17,17,.12) 1px,transparent 1px); background-size:40px 40px; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  .map-facade iframe{position:absolute; inset:0; width:100%; height:100%; min-height:0; border:0; display:block;}
+  .map-facade__panel{background:var(--black); color:#fff; border:3px solid var(--black); box-shadow:8px 8px 0 rgba(17,17,17,.35); padding:24px 26px 22px; margin:20px; max-width:420px; width:calc(100% - 40px); text-align:left;}
+  .map-facade__tag{display:inline-block; background:var(--yellow); color:var(--black); font-family:var(--head-font); font-weight:700; font-size:15px; letter-spacing:.1em; text-transform:uppercase; padding:4px 10px 2px; margin-bottom:14px;}
+  .map-facade__name{display:block; font-family:var(--head-font); font-weight:800; font-size:34px; line-height:1; text-transform:uppercase; letter-spacing:.01em; color:var(--yellow);}
+  .map-facade__addr{display:block; margin:8px 0 20px; color:#d9d9d9; font-size:16px;}
+  .map-facade__actions{display:flex; flex-wrap:wrap; gap:12px; align-items:center;}
+  .map-facade__btn{font-family:var(--head-font); font-weight:800; font-size:20px; line-height:1; letter-spacing:.06em; text-transform:uppercase; background:var(--yellow); color:var(--black); border:3px solid var(--yellow); border-radius:0; padding:12px 22px 10px; cursor:pointer;}
+  .map-facade__btn:hover{background:#fff; border-color:#fff;}
+  .map-facade__link{font-family:var(--head-font); font-weight:800; font-size:19px; letter-spacing:.08em; text-transform:uppercase; color:var(--yellow); text-decoration:none; border-bottom:3px solid var(--yellow); padding-bottom:1px;}
+  .map-facade__link:hover{background:var(--yellow); color:var(--black);}
+  .map-facade__btn:focus-visible,.map-facade__link:focus-visible{outline:3px solid #fff; outline-offset:3px;}
+</style>
+<script>
+(function(){
+  var box=document.getElementById('map-facade'), btn=document.getElementById('map-show');
+  if(!box||!btn) return;
+  btn.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src=box.getAttribute('data-src');
+    f.title=box.getAttribute('data-title');
+    f.loading='lazy';
+    f.referrerPolicy='no-referrer-when-downgrade';
+    f.setAttribute('allowfullscreen','');
+    var panel=box.querySelector('.map-facade__panel');
+    box.replaceChild(f,panel);
+    var d=document.createElement('a');
+    d.className='map-facade__link';
+    d.href='https://www.google.com/maps/search/?api=1&query=Church+Hill+Autos+Station+Rd+Northfield+Birmingham';
+    d.target='_blank'; d.rel='noopener'; d.textContent='Get directions';
+    d.style.cssText='position:absolute;left:12px;bottom:12px;background:#111;padding:8px 12px 6px;z-index:2;';
+    box.appendChild(d);
+    d.focus();
+  });
+})();
+</script>
 </body>
 </html>
