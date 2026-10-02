@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=' 'sha256-/ujYExIjJ6agePCzaV7OteSWbK4NpHePfdHoC+kAnrI=' 'sha256-5lGhQKTYCkiJ50cKpDfsMOu7Qna0HYwihUK7ybVMC80='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://maps.google.com https://www.google.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-gAIMlo4uHwea7LDSu/hGhLXHg8Iu/WQoVQvXGVLwabA=' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=' 'sha256-/ujYExIjJ6agePCzaV7OteSWbK4NpHePfdHoC+kAnrI=' 'sha256-5lGhQKTYCkiJ50cKpDfsMOu7Qna0HYwihUK7ybVMC80='; style-src 'self' 'sha256-PPLFL69liyEgMT3Wew36MLTq2CYBZDdILdv/jN2U2qc=' 'sha256-EBBpP+b+vBNxHUp7Ikm9SLNGD6dWGCCb6uXBZwMPE2c='; img-src 'self' data:; font-src 'self'; frame-src https://maps.google.com https://www.google.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
+<script>if (window.top !== window.self) { try { window.top.location.replace(window.self.location.href); } catch (e) { document.documentElement.hidden = true; } }</script>
 <title>MOT &amp; Servicing, Northfield, Birmingham | Church Hill Autos</title>
 <meta name="description" content="Church Hill Autos is an MOT, servicing and repairs garage on Station Rd, Northfield, Birmingham. Call 0121 475 2958 to book your MOT." />
 <link rel="canonical" href="https://desolatemartial553.github.io/church-hill-autos/" />
@@ -317,6 +318,8 @@
     .btn:hover, .plate:hover, .review:hover{transform:none;}
   }
   footer a[href="privacy.html"]{text-decoration:underline; text-underline-offset:3px;}
+  /* Former inline style attributes (moved here for a stricter CSP) */
+  .u-s1{grid-template-columns:1fr !important;}
 </style>
 </head>
 <body>
@@ -582,7 +585,7 @@
         </div>
       </div>
     </div>
-    <div class="grid" style="grid-template-columns:1fr;">
+    <div class="grid u-s1">
       <!-- PLACEHOLDER: confirm real opening hours -->
       <div class="card"><h3>Opening Hours</h3><p>Mon–Fri: 8am – 6pm<br>Sat: 8am – 1pm</p><a class="contact-link" href="tel:+441214752958">Call us</a></div>
       <!-- /PLACEHOLDER -->
